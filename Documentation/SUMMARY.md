@@ -11,3 +11,4 @@
   * [Levels](technical-design/levels/README.md)
     * [Narratology Level](technical-design/levels/narratology-level.md)
     * [Ludology Level](technical-design/levels/ludology-level.md)
+* [Problems encountered](problems-encountered.md)
