@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-CatInTheRain.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CatInTheRain/Intermediate/Build/Win64/x64/CatInTheRainEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CatInTheRain/Intermediate/Build/Win64/x64/UnrealEditor/Development/CatInTheRain/CatInTheRain.cpp.obj"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CatInTheRain/Intermediate/Build/Win64/x64/UnrealEditor/Development/CatInTheRain/MyClass.cpp.obj"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CatInTheRain/Intermediate/Build/Win64/x64/UnrealEditor/Development/CatInTheRain/PerModuleInline.gen.cpp.obj"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CatInTheRain/Intermediate/Build/Win64/x64/UnrealEditor/Development/CatInTheRain/Default.rc2.res"
+/OUT:"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CatInTheRain/Intermediate/Build/Win64/x64/UnrealEditor/Development/CatInTheRain/UnrealEditor-CatInTheRain.lib"

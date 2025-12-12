@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\mayas\\desktop\\4thyrproj\\4th-year-project\\catintherain\\source\\catintherain\\myclass.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\mayas\\desktop\\4thyrproj\\4th-year-project\\catintherain\\intermediate\\build\\win64\\x64\\catintheraineditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\mayas\\desktop\\4thyrproj\\4th-year-project\\catintherain\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\catintherain\\definitions.catintherain.h",
+            "c:\\users\\mayas\\desktop\\4thyrproj\\4th-year-project\\catintherain\\source\\catintherain\\myclass.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

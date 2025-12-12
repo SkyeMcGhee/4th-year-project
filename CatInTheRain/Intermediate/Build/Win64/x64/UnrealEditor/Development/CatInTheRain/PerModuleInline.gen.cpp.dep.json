@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\mayas\\desktop\\4thyrproj\\4th-year-project\\catintherain\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\catintherain\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\mayas\\desktop\\4thyrproj\\4th-year-project\\catintherain\\intermediate\\build\\win64\\x64\\catintheraineditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\mayas\\desktop\\4thyrproj\\4th-year-project\\catintherain\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\catintherain\\definitions.catintherain.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
