@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\mayas\\desktop\\4thyrproj\\citr2\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\citr2\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\mayas\\desktop\\4thyrproj\\citr2\\intermediate\\build\\win64\\x64\\citr2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "c:\\users\\mayas\\desktop\\4thyrproj\\citr2\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\citr2\\definitions.citr2.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

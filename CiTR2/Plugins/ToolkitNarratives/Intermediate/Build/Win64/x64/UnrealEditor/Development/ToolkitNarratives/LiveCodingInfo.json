@@ -1,0 +1,22 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.ToolkitNarratives.cpp.obj": [
+			"DataLensStructs.gen.cpp.obj",
+			"DataLensSubsystem.gen.cpp.obj",
+			"DataLensTable.gen.cpp.obj",
+			"DataLensTableView.gen.cpp.obj",
+			"DialogueComponentBase.gen.cpp.obj",
+			"DialogueWidgetBase.gen.cpp.obj",
+			"ToolkitNarratives.init.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"DataLensStructs.cpp.obj",
+			"DataLensSubsystem.cpp.obj",
+			"DataLensTable.cpp.obj",
+			"DataLensTableView.cpp.obj",
+			"DialogueComponentBase.cpp.obj",
+			"DialogueWidgetBase.cpp.obj",
+			"ToolkitNarratives.cpp.obj"
+		]
+	}
+}

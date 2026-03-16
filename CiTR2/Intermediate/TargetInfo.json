@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CiTR2",
+			"Path": "..\\Source\\CiTR2.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CiTR2Editor",
+			"Path": "..\\Source\\CiTR2Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

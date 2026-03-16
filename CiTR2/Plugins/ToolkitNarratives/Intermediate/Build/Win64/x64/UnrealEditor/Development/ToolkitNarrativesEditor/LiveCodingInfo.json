@@ -1,0 +1,12 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.ToolkitNarrativesEditor.cpp.obj": [
+			"ToolkitNarrativesEditor.init.gen.cpp.obj",
+			"UK2Node_GetViewData.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"ToolkitNarrativesEditor.cpp.obj",
+			"UK2Node_GetViewData.cpp.obj"
+		]
+	}
+}

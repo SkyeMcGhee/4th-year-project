@@ -1,0 +1,16 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\mayas\\desktop\\4thyrproj\\citr2\\plugins\\toolkitnarratives\\source\\toolkitnarrativeseditor\\private\\toolkitnarrativeseditor.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\mayas\\desktop\\4thyrproj\\citr2\\intermediate\\build\\win64\\x64\\citr2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "c:\\users\\mayas\\desktop\\4thyrproj\\citr2\\plugins\\toolkitnarratives\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\toolkitnarrativeseditor\\definitions.toolkitnarrativeseditor.h",
+            "c:\\users\\mayas\\desktop\\4thyrproj\\citr2\\plugins\\toolkitnarratives\\source\\toolkitnarrativeseditor\\public\\toolkitnarrativeseditor.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\blueprintgraph\\public\\blueprintactiondatabaseregistrar.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\blueprintgraph\\public\\blueprintactiondatabase.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
