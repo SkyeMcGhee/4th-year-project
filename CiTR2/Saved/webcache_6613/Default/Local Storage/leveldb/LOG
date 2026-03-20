@@ -1,9 +1,5 @@
-2026/03/19-14:51:30.047 8aec Reusing MANIFEST C:\Users\mayas\Desktop\4thYrProj\4th-year-project\CiTR2\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
-2026/03/19-14:51:30.063 8aec Recovering log #3
-2026/03/19-14:51:30.069 8aec Reusing old log C:\Users\mayas\Desktop\4thYrProj\4th-year-project\CiTR2\Saved\webcache_6613\Default\Local Storage\leveldb/000003.log 
-2026/03/19-15:12:09.586 afcc Level-0 table #5: started
-2026/03/19-15:12:09.591 afcc Level-0 table #5: 67962 bytes OK
-2026/03/19-15:12:09.594 afcc Delete type=0 #3
-2026/03/19-15:17:09.596 afcc Level-0 table #7: started
-2026/03/19-15:17:09.613 afcc Level-0 table #7: 78350 bytes OK
-2026/03/19-15:17:09.616 afcc Delete type=0 #4
+2026/03/20-11:48:05.325 1ba8 Reusing MANIFEST C:\Users\mayas\Desktop\4thYrProj\4th-year-project\CiTR2\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
+2026/03/20-11:48:05.341 1ba8 Recovering log #6
+2026/03/20-11:48:05.341 1ba8 Level-0 table #9: started
+2026/03/20-11:48:05.359 1ba8 Level-0 table #9: 75718 bytes OK
+2026/03/20-11:48:05.377 1ba8 Delete type=0 #6

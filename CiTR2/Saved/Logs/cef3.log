@@ -1,8 +1,12 @@
-[46428:41188:0319/145129.749:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
-[46428:31672:0319/145129.888:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
-[46428:41188:0319/145129.913:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
-[46428:41188:0319/145141.079:ERROR:device_event_log_impl.cc(196)] [14:51:40.728] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
-[10316:17352:0319/145141.756:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-C82E1782CA2090F61C11D6E9E7DBA50C will be ignored
-[20644:38012:0319/150509.597:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 9-EBFB1C20709F9E01A6782E6BC3D1B278 will be ignored
-[40708:10412:0319/150536.809:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame B-F3F8C394B0FB726E15A3D7B6314A3CC6 will be ignored
-[46428:41188:0319/160236.581:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[676:36152:0320/114804.885:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[676:2356:0320/114805.065:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[676:36152:0320/114805.086:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[676:36152:0320/114813.285:ERROR:device_event_log_impl.cc(196)] [11:48:13.212] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[34976:43128:0320/114815.478:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-E4B0D8460B99E2B9E815D37BC63D01BC will be ignored
+[41900:32788:0320/122531.797:WARNING:dns_config_service_win.cc(605)] Failed to read DnsConfig.
+[676:38568:0320/122531.836:WARNING:dns_config_service_win.cc(605)] Failed to read DnsConfig.
+[676:36152:0320/155636.886:ERROR:device_event_log_impl.cc(196)] [15:56:36.739] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[676:36152:0320/155637.096:ERROR:device_event_log_impl.cc(196)] [15:56:36.936] USB: usb_service_win.cc:308 SetupDiEnumDeviceInterfaces: No more data is available. (0x103)
+[676:36152:0320/155637.096:ERROR:device_event_log_impl.cc(196)] [15:56:36.974] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[676:36152:0320/155652.916:ERROR:device_event_log_impl.cc(196)] [15:56:52.906] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[676:36152:0320/161641.366:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
