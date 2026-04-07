@@ -44,60 +44,65 @@ UDialogueComponentBase::UDialogueComponentBase()
 	// ...
 }
 
-void UDialogueComponentBase::OpenConversation_Implementation(UCommonActivatableWidgetContainerBase* Stack)
+void UDialogueComponentBase::OpenConversation_Implementation(UDialogueWidgetBase* InWidget)
 {
-    if (!Widget || !GetWorld() || !Stack)
+    // If we are already in a conversation, close it first
+    if (ActiveWidget)
     {
-        UE_LOG(LogTemp, Warning, TEXT("Invalid Widget class, World, or Stack reference!"));
+        CloseConversation();
+    }
+
+    if (!InWidget)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("OpenConversation called with null widget"));
         return;
     }
 
-    if (!ActiveWidget)
-    {
-        // Push the widget onto the given stack
-        UCommonActivatableWidget* NewWidget = Stack->AddWidget<UCommonActivatableWidget>(Widget);
+    ActiveWidget = InWidget;
 
-        if (!NewWidget)
-        {
-            UE_LOG(LogTemp, Warning, TEXT("Failed to push Dialogue Widget to provided Stack"));
-            return;
-        }
+    // Reset dialogue state
+    ActiveIndex = 0;
 
-        // Store reference to ActiveWidget
-        ActiveWidget = Cast<UDialogueWidgetBase>(NewWidget);
-    }
-    else
-    {
-        if (!ActiveWidget->IsActivated())
-            ActiveWidget->ActivateWidget();
-    }
+    // Notify widget
+    ActiveWidget->OpenDialogue(this);
 
-    if (ActiveWidget)
-    {
-        ActiveWidget->OpenDialogue(this);
-        ProgressDialogue();
-    }
-    else
-    {
-        UE_LOG(LogTemp, Warning, TEXT("Pushed widget is not of type UDialogueWidgetBase"));
-    }
+    // Begin dialogue flow
+    ProgressDialogue();
 }
 
-void UDialogueComponentBase::CallParentOpenConversation(UCommonActivatableWidgetContainerBase* Stack)
+void UDialogueComponentBase::CallParentOpenConversation(UDialogueWidgetBase* InWidget)
 {
-    OpenConversation_Implementation(Stack);
+    OpenConversation_Implementation(InWidget);
+}
+
+void UDialogueComponentBase::OpenConversationOnBranch_Implementation(UDialogueWidgetBase* InWidget,
+    FName DialogueBranch, EProgressStoreType StoreType, bool ClearProgressBeforeOpen)
+{
+    // Switch branch if needed
+    if (ActiveBranch != DialogueBranch)
+    {
+        SetDialogueBranch(DialogueBranch, StoreType);
+    }
+
+    // Optionally clear progress before opening
+    if (ClearProgressBeforeOpen)
+    {
+        ActiveProgress.Empty();
+        ActiveIndex = 0;
+    }
+
+    // Open (this will close any existing conversation)
+    OpenConversation(InWidget);
 }
 
 void UDialogueComponentBase::CloseConversation_Implementation()
 {
-    if (ActiveWidget)
-    {
-        ActiveWidget->DeactivateWidget();
-    }
-    else
-    {
-        UE_LOG(LogTemp, Warning, TEXT("No active widget to close"));
-    }
+    // Handle Audio if applicable
+    if (AudioComponent && AudioComponent->IsPlaying())
+        AudioComponent->Stop();
+        
+    ActiveWidget = nullptr;
+    ActiveIndex = 0;
 }
 
 void UDialogueComponentBase::CallParentCloseConversation()
@@ -124,9 +129,7 @@ void UDialogueComponentBase::AddDialogue(FText Speaker, FText Dialogue, TArray<F
     // Increment the ActiveIndex
     ActiveIndex++;
 
-    int32* FoundOption = ActiveProgress.Find(ActiveIndex);
-
-    if (FoundOption)
+    if (int32* FoundOption = ActiveProgress.Find(ActiveIndex))
     {
         // If found, return PassThrough
         Type = EDialogueAddType::PassThrough;
@@ -143,9 +146,7 @@ void UDialogueComponentBase::AddDialogue(FText Speaker, FText Dialogue, TArray<F
         // Handle Audio if applicable
         if (bUseAudio && Audio.IsValid() && AudioComponent)
         {
-            USoundBase* LoadedSound = Audio.Get();
-
-            if (LoadedSound)
+            if (USoundBase* LoadedSound = Audio.Get())
             {
                 // Stop any currently playing sound
                 AudioComponent->Stop();
@@ -169,7 +170,7 @@ void UDialogueComponentBase::AddDialogue(FText Speaker, FText Dialogue, TArray<F
     }
 }
 
-void UDialogueComponentBase::OnAudioLoaded(TSoftObjectPtr<USoundBase> LoadedAudio)
+void UDialogueComponentBase::OnAudioLoaded(const TSoftObjectPtr<USoundBase> LoadedAudio) const
 {
     // Check if the loaded audio is valid
     if (LoadedAudio.IsValid())
@@ -208,11 +209,11 @@ void UDialogueComponentBase::CallParentClearDialogueProgress()
     ClearDialogueProgress_Implementation();
 }
 
-void UDialogueComponentBase::RemoveDialogueProgress_Implementation(int32 Steps)
+void UDialogueComponentBase::RemoveDialogueProgress_Implementation(const int32 Steps)
 {
     for (int32 i = 0; i < Steps; ++i)
     {
-        int32 KeyToRemove = ActiveIndex - i;
+        const int32 KeyToRemove = ActiveProgress.Num() - 1 - i;
 
         ActiveProgress.Remove(KeyToRemove);
     }
@@ -220,12 +221,12 @@ void UDialogueComponentBase::RemoveDialogueProgress_Implementation(int32 Steps)
     ProgressDialogue();
 }
 
-void UDialogueComponentBase::CallParentRemoveDialogueProgress(int32 Steps)
+void UDialogueComponentBase::CallParentRemoveDialogueProgress(const int32 Steps)
 {
     RemoveDialogueProgress_Implementation(Steps);
 }
 
-void UDialogueComponentBase::SetDialogueBranch_Implementation(FName DialogueBranch, EProgressStoreType StoreType)
+void UDialogueComponentBase::SetDialogueBranch_Implementation(const FName DialogueBranch, const EProgressStoreType StoreType)
 {
     if (StoreType == EProgressStoreType::Clear)
     {
@@ -256,7 +257,7 @@ void UDialogueComponentBase::SetDialogueBranch_Implementation(FName DialogueBran
     }
 }
 
-void UDialogueComponentBase::CallParentSetDialogueBranch(FName DialogueBranch, EProgressStoreType StoreType)
+void UDialogueComponentBase::CallParentSetDialogueBranch(const FName DialogueBranch, const EProgressStoreType StoreType)
 {
     SetDialogueBranch_Implementation(DialogueBranch, StoreType);
 }

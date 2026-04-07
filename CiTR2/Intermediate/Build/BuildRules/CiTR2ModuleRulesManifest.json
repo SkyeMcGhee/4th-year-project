@@ -1,10 +1,10 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\mayas\\Desktop\\4thYrProj\\CiTR2\\Source\\CiTR2\\CiTR2.Build.cs",
-		"C:\\Users\\mayas\\Desktop\\4thYrProj\\CiTR2\\Plugins\\ToolkitNarratives\\Source\\ToolkitNarrativesEditor\\ToolkitNarrativesEditor.Build.cs",
-		"C:\\Users\\mayas\\Desktop\\4thYrProj\\CiTR2\\Plugins\\ToolkitNarratives\\Source\\ToolkitNarratives\\ToolkitNarratives.Build.cs",
-		"C:\\Users\\mayas\\Desktop\\4thYrProj\\CiTR2\\Source\\CiTR2.Target.cs",
-		"C:\\Users\\mayas\\Desktop\\4thYrProj\\CiTR2\\Source\\CiTR2Editor.Target.cs"
+		"C:\\Users\\mayas\\Desktop\\4thYrProj\\4th-year-project\\CiTR2\\Source\\CiTR2\\CiTR2.Build.cs",
+		"C:\\Users\\mayas\\Desktop\\4thYrProj\\4th-year-project\\CiTR2\\Plugins\\ToolkitNarratives\\Source\\ToolkitNarrativesEditor\\ToolkitNarrativesEditor.Build.cs",
+		"C:\\Users\\mayas\\Desktop\\4thYrProj\\4th-year-project\\CiTR2\\Plugins\\ToolkitNarratives\\Source\\ToolkitNarratives\\ToolkitNarratives.Build.cs",
+		"C:\\Users\\mayas\\Desktop\\4thYrProj\\4th-year-project\\CiTR2\\Source\\CiTR2.Target.cs",
+		"C:\\Users\\mayas\\Desktop\\4thYrProj\\4th-year-project\\CiTR2\\Source\\CiTR2Editor.Target.cs"
 	],
-	"EngineVersion": "5.7.1"
+	"EngineVersion": "5.7.4"
 }

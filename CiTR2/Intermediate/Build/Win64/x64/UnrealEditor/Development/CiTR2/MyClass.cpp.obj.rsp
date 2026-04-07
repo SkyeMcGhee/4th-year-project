@@ -1,12 +1,12 @@
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Source/CiTR2/MyClass.cpp"
-@"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/CiTR2.Shared.rsp"
-/FI"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h"
-/FI"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/Definitions.CiTR2.h"
-/Yu"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h"
-/Fp"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.pch"
-/Fo"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/MyClass.cpp.obj"
-/experimental:log "C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/MyClass.cpp.sarif"
-/sourceDependencies "C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/MyClass.cpp.dep.json"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Source/CiTR2/MyClass.cpp"
+@"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/CiTR2.Shared.rsp"
+/FI"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h"
+/FI"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/Definitions.CiTR2.h"
+/Yu"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h"
+/Fp"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.pch"
+/Fo"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/MyClass.cpp.obj"
+/experimental:log "C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/MyClass.cpp.sarif"
+/sourceDependencies "C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/MyClass.cpp.dep.json"
 /nologo
 /Oi
 /FC

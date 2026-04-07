@@ -296,15 +296,15 @@ UDialogueWidgetBase::~UDialogueWidgetBase() {}
 // ********** End Class UDialogueWidgetBase ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_Statics
+struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UDialogueWidgetBase, UDialogueWidgetBase::StaticClass, TEXT("UDialogueWidgetBase"), &Z_Registration_Info_UClass_UDialogueWidgetBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueWidgetBase), 3036439694U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_763728766{
+}; // Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_763728766{
 	TEXT("/Script/ToolkitNarratives"),
-	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueWidgetBase_h__Script_ToolkitNarratives_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

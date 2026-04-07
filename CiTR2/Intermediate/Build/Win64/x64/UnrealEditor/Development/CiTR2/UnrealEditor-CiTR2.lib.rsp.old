@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-CiTR2.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.obj"
+"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/CiTR2.cpp.obj"
+"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/MyClass.cpp.obj"
+"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/PerModuleInline.gen.cpp.obj"
+"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/Default.rc2.res"
+/OUT:"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/UnrealEditor/Development/CiTR2/UnrealEditor-CiTR2.lib"

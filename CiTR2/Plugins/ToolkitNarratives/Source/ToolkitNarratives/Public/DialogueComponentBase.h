@@ -42,8 +42,6 @@ class TOOLKITNARRATIVES_API UDialogueComponentBase : public UActorComponent
 {
     GENERATED_BODY()
 
-    
-
 protected:
     virtual void BeginPlay() override;
 
@@ -54,16 +52,12 @@ protected:
     UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Dialogues")
     UAudioComponent* AudioComponent;
 
-    /** DialogueWidgetType **/
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Dialogues")
-    TSubclassOf<UDialogueWidgetBase> Widget;
-
     /** Reference to the Dialogue Widget */
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Dialogues")
+    UPROPERTY(BlueprintReadOnly, Category = "Dialogues")
     UDialogueWidgetBase* ActiveWidget;
 
     /** Active dialogue progress mapping (Key: Progress Index, Value: Option Index) */
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Dialogues")
+    UPROPERTY(BlueprintReadOnly, Category = "Dialogues")
     TMap<int32, int32> ActiveProgress;
 
     /** Current active dialogue index */
@@ -71,7 +65,7 @@ protected:
     int32 ActiveIndex;
 
     /** Current active dialogue branch */
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Dialogues")
+    UPROPERTY(BlueprintReadOnly, Category = "Dialogues")
     FName ActiveBranch;
 
     /** Map storing progress for different dialogue branches */
@@ -84,10 +78,15 @@ public:
 
     /** Opens a conversation */
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Dialogues")
-    void OpenConversation(UCommonActivatableWidgetContainerBase* Stack);
-    virtual void OpenConversation_Implementation(UCommonActivatableWidgetContainerBase* Stack);
+    void OpenConversation(UDialogueWidgetBase* InWidget);
+    virtual void OpenConversation_Implementation(UDialogueWidgetBase* InWidget);
     UFUNCTION(BlueprintCallable, Category = "Dialogues")
-    void CallParentOpenConversation(UCommonActivatableWidgetContainerBase* Stack);
+    void CallParentOpenConversation(UDialogueWidgetBase* InWidget);
+    
+    /** Changes Branch and then opens a conversation **/
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Dialogues")
+    void OpenConversationOnBranch(UDialogueWidgetBase* InWidget, FName DialogueBranch, EProgressStoreType StoreType, bool ClearProgressBeforeOpen);
+    virtual void OpenConversationOnBranch_Implementation(UDialogueWidgetBase* InWidget, FName DialogueBranch, EProgressStoreType StoreType, bool ClearProgressBeforeOpen);
 
     /** Closes a conversation */
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Dialogues")
@@ -135,19 +134,19 @@ public:
 
     /** Removes dialogue progress by a number of steps */
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Dialogues")
-    void RemoveDialogueProgress(int32 Steps);
-    void RemoveDialogueProgress_Implementation(int32 Steps);
+    void RemoveDialogueProgress(const int32 Steps);
+    void RemoveDialogueProgress_Implementation(const int32 Steps);
     UFUNCTION(BlueprintCallable, Category = "Dialogues")
-    void CallParentRemoveDialogueProgress(int32 Steps);
+    void CallParentRemoveDialogueProgress(const int32 Steps);
 
     /** Sets a dialogue branch */
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Dialogues")
-    void SetDialogueBranch(FName DialogueBranch, EProgressStoreType StoreType);
-    void SetDialogueBranch_Implementation(FName DialogueBranch, EProgressStoreType StoreType);
+    void SetDialogueBranch(const FName DialogueBranch, const EProgressStoreType StoreType);
+    void SetDialogueBranch_Implementation(const FName DialogueBranch, const EProgressStoreType StoreType);
     UFUNCTION(BlueprintCallable, Category = "Dialogues")
-    void CallParentSetDialogueBranch(FName DialogueBranch, EProgressStoreType StoreType);
+    void CallParentSetDialogueBranch(const FName DialogueBranch, const EProgressStoreType StoreType);
 
 private: 
     UFUNCTION()
-    void OnAudioLoaded(TSoftObjectPtr<USoundBase> LoadedAudio);
+    void OnAudioLoaded(const TSoftObjectPtr<USoundBase> LoadedAudio) const;
 };

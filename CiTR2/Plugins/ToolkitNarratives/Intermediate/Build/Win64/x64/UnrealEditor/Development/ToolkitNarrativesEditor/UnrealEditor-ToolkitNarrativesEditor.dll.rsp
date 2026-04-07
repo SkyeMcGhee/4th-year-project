@@ -20,9 +20,9 @@
 /ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/lib/x64"
-/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.26100.0/ucrt/x64"
-/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.26100.0/um/x64"
+/LIBPATH:"C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.44.35207/lib/x64"
+/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.22621.0/ucrt/x64"
+/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.22621.0/um/x64"
 /NODEFAULTLIB:"LIBCMT"
 /NODEFAULTLIB:"LIBCPMT"
 /NODEFAULTLIB:"LIBCMTD"
@@ -36,11 +36,9 @@
 /FUNCTIONPADMIN:6
 /NOIMPLIB
 /NOEXP
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarrativesEditor/Module.ToolkitNarrativesEditor.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarrativesEditor/ToolkitNarrativesEditor.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarrativesEditor/UK2Node_GetViewData.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarrativesEditor/Default.rc2.res"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.obj"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarrativesEditor/Module.ToolkitNarrativesEditor.cpp.obj"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarrativesEditor/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Core/UnrealEditor-Core.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Engine/UnrealEditor-Engine.lib"
@@ -48,7 +46,7 @@
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/BlueprintGraph/UnrealEditor-BlueprintGraph.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/KismetCompiler/UnrealEditor-KismetCompiler.lib"
 "../Plugins/Runtime/CommonUI/Intermediate/Build/Win64/x64/UnrealEditor/Development/CommonUI/UnrealEditor-CommonUI.lib"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/UnrealEditor-ToolkitNarratives.lib"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/UnrealEditor-ToolkitNarratives.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -74,6 +72,6 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Binaries/Win64/UnrealEditor-ToolkitNarrativesEditor.dll"
-/PDB:"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Binaries/Win64/UnrealEditor-ToolkitNarrativesEditor.pdb"
+/OUT:"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Binaries/Win64/UnrealEditor-ToolkitNarrativesEditor.dll"
+/PDB:"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Binaries/Win64/UnrealEditor-ToolkitNarrativesEditor.pdb"
 /ignore:4078

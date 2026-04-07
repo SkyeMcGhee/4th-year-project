@@ -12,8 +12,6 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 void EmptyLinkFunctionForGeneratedCodeDialogueComponentBase() {}
 
 // ********** Begin Cross Module References ********************************************************
-COMMONUI_API UClass* Z_Construct_UClass_UCommonActivatableWidgetContainerBase_NoRegister();
-COREUOBJECT_API UClass* Z_Construct_UClass_UClass_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
@@ -396,29 +394,29 @@ struct Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation_S
 {
 	struct DialogueComponentBase_eventCallParentOpenConversation_Parms
 	{
-		UCommonActivatableWidgetContainerBase* Stack;
+		UDialogueWidgetBase* InWidget;
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dialogues" },
 		{ "ModuleRelativePath", "Public/DialogueComponentBase.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Stack_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InWidget_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
 
 // ********** Begin Function CallParentOpenConversation constinit property declarations ************
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_Stack;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InWidget;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Function CallParentOpenConversation constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 
 // ********** Begin Function CallParentOpenConversation Property Definitions ***********************
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation_Statics::NewProp_Stack = { "Stack", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventCallParentOpenConversation_Parms, Stack), Z_Construct_UClass_UCommonActivatableWidgetContainerBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Stack_MetaData), NewProp_Stack_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation_Statics::NewProp_InWidget = { "InWidget", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventCallParentOpenConversation_Parms, InWidget), Z_Construct_UClass_UDialogueWidgetBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InWidget_MetaData), NewProp_InWidget_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation_Statics::NewProp_Stack,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation_Statics::NewProp_InWidget,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation_Statics::PropPointers) < 2048);
 // ********** End Function CallParentOpenConversation Property Definitions *************************
@@ -438,10 +436,10 @@ UFunction* Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversati
 }
 DEFINE_FUNCTION(UDialogueComponentBase::execCallParentOpenConversation)
 {
-	P_GET_OBJECT(UCommonActivatableWidgetContainerBase,Z_Param_Stack);
+	P_GET_OBJECT(UDialogueWidgetBase,Z_Param_InWidget);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->CallParentOpenConversation(Z_Param_Stack);
+	P_THIS->CallParentOpenConversation(Z_Param_InWidget);
 	P_NATIVE_END;
 }
 // ********** End Class UDialogueComponentBase Function CallParentOpenConversation *****************
@@ -494,6 +492,9 @@ struct Z_Construct_UFunction_UDialogueComponentBase_CallParentRemoveDialogueProg
 		{ "Category", "Dialogues" },
 		{ "ModuleRelativePath", "Public/DialogueComponentBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Steps_MetaData[] = {
+		{ "NativeConst", "" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Function CallParentRemoveDialogueProgress constinit property declarations ******
@@ -504,7 +505,7 @@ struct Z_Construct_UFunction_UDialogueComponentBase_CallParentRemoveDialogueProg
 };
 
 // ********** Begin Function CallParentRemoveDialogueProgress Property Definitions *****************
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentRemoveDialogueProgress_Statics::NewProp_Steps = { "Steps", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventCallParentRemoveDialogueProgress_Parms, Steps), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentRemoveDialogueProgress_Statics::NewProp_Steps = { "Steps", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventCallParentRemoveDialogueProgress_Parms, Steps), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Steps_MetaData), NewProp_Steps_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueComponentBase_CallParentRemoveDialogueProgress_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_CallParentRemoveDialogueProgress_Statics::NewProp_Steps,
 };
@@ -547,6 +548,12 @@ struct Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_
 		{ "Category", "Dialogues" },
 		{ "ModuleRelativePath", "Public/DialogueComponentBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueBranch_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StoreType_MetaData[] = {
+		{ "NativeConst", "" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Function CallParentSetDialogueBranch constinit property declarations ***********
@@ -559,9 +566,9 @@ struct Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_
 };
 
 // ********** Begin Function CallParentSetDialogueBranch Property Definitions **********************
-const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_Statics::NewProp_DialogueBranch = { "DialogueBranch", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventCallParentSetDialogueBranch_Parms, DialogueBranch), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_Statics::NewProp_DialogueBranch = { "DialogueBranch", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventCallParentSetDialogueBranch_Parms, DialogueBranch), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueBranch_MetaData), NewProp_DialogueBranch_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_Statics::NewProp_StoreType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_Statics::NewProp_StoreType = { "StoreType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventCallParentSetDialogueBranch_Parms, StoreType), Z_Construct_UEnum_ToolkitNarratives_EProgressStoreType, METADATA_PARAMS(0, nullptr) }; // 928982178
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_Statics::NewProp_StoreType = { "StoreType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventCallParentSetDialogueBranch_Parms, StoreType), Z_Construct_UEnum_ToolkitNarratives_EProgressStoreType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StoreType_MetaData), NewProp_StoreType_MetaData) }; // 928982178
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_Statics::NewProp_DialogueBranch,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch_Statics::NewProp_StoreType_Underlying,
@@ -827,6 +834,9 @@ struct Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/DialogueComponentBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LoadedAudio_MetaData[] = {
+		{ "NativeConst", "" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Function OnAudioLoaded constinit property declarations *************************
@@ -837,7 +847,7 @@ struct Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics
 };
 
 // ********** Begin Function OnAudioLoaded Property Definitions ************************************
-const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::NewProp_LoadedAudio = { "LoadedAudio", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventOnAudioLoaded_Parms, LoadedAudio), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::NewProp_LoadedAudio = { "LoadedAudio", nullptr, (EPropertyFlags)0x0014000000000082, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventOnAudioLoaded_Parms, LoadedAudio), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LoadedAudio_MetaData), NewProp_LoadedAudio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::NewProp_LoadedAudio,
 };
@@ -846,7 +856,7 @@ static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_OnAudi
 const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UDialogueComponentBase, nullptr, "OnAudioLoaded", 	Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::PropPointers, 
 	UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::PropPointers), 
 sizeof(Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::DialogueComponentBase_eventOnAudioLoaded_Parms),
-RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::Function_MetaDataParams)},  };
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded_Statics::DialogueComponentBase_eventOnAudioLoaded_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded()
 {
@@ -870,21 +880,21 @@ DEFINE_FUNCTION(UDialogueComponentBase::execOnAudioLoaded)
 // ********** Begin Class UDialogueComponentBase Function OpenConversation *************************
 struct DialogueComponentBase_eventOpenConversation_Parms
 {
-	UCommonActivatableWidgetContainerBase* Stack;
+	UDialogueWidgetBase* InWidget;
 };
 static FName NAME_UDialogueComponentBase_OpenConversation = FName(TEXT("OpenConversation"));
-void UDialogueComponentBase::OpenConversation(UCommonActivatableWidgetContainerBase* Stack)
+void UDialogueComponentBase::OpenConversation(UDialogueWidgetBase* InWidget)
 {
 	UFunction* Func = FindFunctionChecked(NAME_UDialogueComponentBase_OpenConversation);
 	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
 	{
 		DialogueComponentBase_eventOpenConversation_Parms Parms;
-		Parms.Stack=Stack;
+		Parms.InWidget=InWidget;
 	ProcessEvent(Func,&Parms);
 	}
 	else
 	{
-		OpenConversation_Implementation(Stack);
+		OpenConversation_Implementation(InWidget);
 	}
 }
 struct Z_Construct_UFunction_UDialogueComponentBase_OpenConversation_Statics
@@ -900,22 +910,22 @@ struct Z_Construct_UFunction_UDialogueComponentBase_OpenConversation_Statics
 		{ "ToolTip", "Opens a conversation" },
 #endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Stack_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InWidget_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
 
 // ********** Begin Function OpenConversation constinit property declarations **********************
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_Stack;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InWidget;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Function OpenConversation constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 
 // ********** Begin Function OpenConversation Property Definitions *********************************
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UDialogueComponentBase_OpenConversation_Statics::NewProp_Stack = { "Stack", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventOpenConversation_Parms, Stack), Z_Construct_UClass_UCommonActivatableWidgetContainerBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Stack_MetaData), NewProp_Stack_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UDialogueComponentBase_OpenConversation_Statics::NewProp_InWidget = { "InWidget", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventOpenConversation_Parms, InWidget), Z_Construct_UClass_UDialogueWidgetBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InWidget_MetaData), NewProp_InWidget_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueComponentBase_OpenConversation_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_OpenConversation_Statics::NewProp_Stack,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_OpenConversation_Statics::NewProp_InWidget,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_OpenConversation_Statics::PropPointers) < 2048);
 // ********** End Function OpenConversation Property Definitions ***********************************
@@ -935,13 +945,115 @@ UFunction* Z_Construct_UFunction_UDialogueComponentBase_OpenConversation()
 }
 DEFINE_FUNCTION(UDialogueComponentBase::execOpenConversation)
 {
-	P_GET_OBJECT(UCommonActivatableWidgetContainerBase,Z_Param_Stack);
+	P_GET_OBJECT(UDialogueWidgetBase,Z_Param_InWidget);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->OpenConversation_Implementation(Z_Param_Stack);
+	P_THIS->OpenConversation_Implementation(Z_Param_InWidget);
 	P_NATIVE_END;
 }
 // ********** End Class UDialogueComponentBase Function OpenConversation ***************************
+
+// ********** Begin Class UDialogueComponentBase Function OpenConversationOnBranch *****************
+struct DialogueComponentBase_eventOpenConversationOnBranch_Parms
+{
+	UDialogueWidgetBase* InWidget;
+	FName DialogueBranch;
+	EProgressStoreType StoreType;
+	bool ClearProgressBeforeOpen;
+};
+static FName NAME_UDialogueComponentBase_OpenConversationOnBranch = FName(TEXT("OpenConversationOnBranch"));
+void UDialogueComponentBase::OpenConversationOnBranch(UDialogueWidgetBase* InWidget, FName DialogueBranch, EProgressStoreType StoreType, bool ClearProgressBeforeOpen)
+{
+	UFunction* Func = FindFunctionChecked(NAME_UDialogueComponentBase_OpenConversationOnBranch);
+	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
+	{
+		DialogueComponentBase_eventOpenConversationOnBranch_Parms Parms;
+		Parms.InWidget=InWidget;
+		Parms.DialogueBranch=DialogueBranch;
+		Parms.StoreType=StoreType;
+		Parms.ClearProgressBeforeOpen=ClearProgressBeforeOpen ? true : false;
+	ProcessEvent(Func,&Parms);
+	}
+	else
+	{
+		OpenConversationOnBranch_Implementation(InWidget, DialogueBranch, StoreType, ClearProgressBeforeOpen);
+	}
+}
+struct Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Dialogues" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Changes Branch and then opens a conversation **/" },
+#endif
+		{ "ModuleRelativePath", "Public/DialogueComponentBase.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Changes Branch and then opens a conversation *" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InWidget_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function OpenConversationOnBranch constinit property declarations **************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InWidget;
+	static const UECodeGen_Private::FNamePropertyParams NewProp_DialogueBranch;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_StoreType_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_StoreType;
+	static void NewProp_ClearProgressBeforeOpen_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ClearProgressBeforeOpen;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OpenConversationOnBranch constinit property declarations ****************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function OpenConversationOnBranch Property Definitions *************************
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_InWidget = { "InWidget", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventOpenConversationOnBranch_Parms, InWidget), Z_Construct_UClass_UDialogueWidgetBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InWidget_MetaData), NewProp_InWidget_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_DialogueBranch = { "DialogueBranch", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventOpenConversationOnBranch_Parms, DialogueBranch), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_StoreType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_StoreType = { "StoreType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventOpenConversationOnBranch_Parms, StoreType), Z_Construct_UEnum_ToolkitNarratives_EProgressStoreType, METADATA_PARAMS(0, nullptr) }; // 928982178
+void Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_ClearProgressBeforeOpen_SetBit(void* Obj)
+{
+	((DialogueComponentBase_eventOpenConversationOnBranch_Parms*)Obj)->ClearProgressBeforeOpen = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_ClearProgressBeforeOpen = { "ClearProgressBeforeOpen", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(DialogueComponentBase_eventOpenConversationOnBranch_Parms), &Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_ClearProgressBeforeOpen_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_InWidget,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_DialogueBranch,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_StoreType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_StoreType,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::NewProp_ClearProgressBeforeOpen,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::PropPointers) < 2048);
+// ********** End Function OpenConversationOnBranch Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UDialogueComponentBase, nullptr, "OpenConversationOnBranch", 	Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::PropPointers), 
+sizeof(DialogueComponentBase_eventOpenConversationOnBranch_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(DialogueComponentBase_eventOpenConversationOnBranch_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UDialogueComponentBase::execOpenConversationOnBranch)
+{
+	P_GET_OBJECT(UDialogueWidgetBase,Z_Param_InWidget);
+	P_GET_PROPERTY(FNameProperty,Z_Param_DialogueBranch);
+	P_GET_ENUM(EProgressStoreType,Z_Param_StoreType);
+	P_GET_UBOOL(Z_Param_ClearProgressBeforeOpen);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OpenConversationOnBranch_Implementation(Z_Param_InWidget,Z_Param_DialogueBranch,EProgressStoreType(Z_Param_StoreType),Z_Param_ClearProgressBeforeOpen);
+	P_NATIVE_END;
+}
+// ********** End Class UDialogueComponentBase Function OpenConversationOnBranch *******************
 
 // ********** Begin Class UDialogueComponentBase Function ProgressDialogue *************************
 static FName NAME_UDialogueComponentBase_ProgressDialogue = FName(TEXT("ProgressDialogue"));
@@ -1004,7 +1116,7 @@ struct DialogueComponentBase_eventRemoveDialogueProgress_Parms
 	int32 Steps;
 };
 static FName NAME_UDialogueComponentBase_RemoveDialogueProgress = FName(TEXT("RemoveDialogueProgress"));
-void UDialogueComponentBase::RemoveDialogueProgress(int32 Steps)
+void UDialogueComponentBase::RemoveDialogueProgress(const int32 Steps)
 {
 	UFunction* Func = FindFunctionChecked(NAME_UDialogueComponentBase_RemoveDialogueProgress);
 	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
@@ -1031,6 +1143,9 @@ struct Z_Construct_UFunction_UDialogueComponentBase_RemoveDialogueProgress_Stati
 		{ "ToolTip", "Removes dialogue progress by a number of steps" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Steps_MetaData[] = {
+		{ "NativeConst", "" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Function RemoveDialogueProgress constinit property declarations ****************
@@ -1041,7 +1156,7 @@ struct Z_Construct_UFunction_UDialogueComponentBase_RemoveDialogueProgress_Stati
 };
 
 // ********** Begin Function RemoveDialogueProgress Property Definitions ***************************
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UDialogueComponentBase_RemoveDialogueProgress_Statics::NewProp_Steps = { "Steps", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventRemoveDialogueProgress_Parms, Steps), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UDialogueComponentBase_RemoveDialogueProgress_Statics::NewProp_Steps = { "Steps", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventRemoveDialogueProgress_Parms, Steps), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Steps_MetaData), NewProp_Steps_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueComponentBase_RemoveDialogueProgress_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_RemoveDialogueProgress_Statics::NewProp_Steps,
 };
@@ -1078,7 +1193,7 @@ struct DialogueComponentBase_eventSetDialogueBranch_Parms
 	EProgressStoreType StoreType;
 };
 static FName NAME_UDialogueComponentBase_SetDialogueBranch = FName(TEXT("SetDialogueBranch"));
-void UDialogueComponentBase::SetDialogueBranch(FName DialogueBranch, EProgressStoreType StoreType)
+void UDialogueComponentBase::SetDialogueBranch(const FName DialogueBranch, const EProgressStoreType StoreType)
 {
 	UFunction* Func = FindFunctionChecked(NAME_UDialogueComponentBase_SetDialogueBranch);
 	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
@@ -1106,6 +1221,12 @@ struct Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics
 		{ "ToolTip", "Sets a dialogue branch" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueBranch_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StoreType_MetaData[] = {
+		{ "NativeConst", "" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Function SetDialogueBranch constinit property declarations *********************
@@ -1118,9 +1239,9 @@ struct Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics
 };
 
 // ********** Begin Function SetDialogueBranch Property Definitions ********************************
-const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics::NewProp_DialogueBranch = { "DialogueBranch", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventSetDialogueBranch_Parms, DialogueBranch), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics::NewProp_DialogueBranch = { "DialogueBranch", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventSetDialogueBranch_Parms, DialogueBranch), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueBranch_MetaData), NewProp_DialogueBranch_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics::NewProp_StoreType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics::NewProp_StoreType = { "StoreType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventSetDialogueBranch_Parms, StoreType), Z_Construct_UEnum_ToolkitNarratives_EProgressStoreType, METADATA_PARAMS(0, nullptr) }; // 928982178
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics::NewProp_StoreType = { "StoreType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DialogueComponentBase_eventSetDialogueBranch_Parms, StoreType), Z_Construct_UEnum_ToolkitNarratives_EProgressStoreType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StoreType_MetaData), NewProp_StoreType_MetaData) }; // 928982178
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics::NewProp_DialogueBranch,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch_Statics::NewProp_StoreType_Underlying,
@@ -1288,16 +1409,6 @@ struct Z_Construct_UClass_UDialogueComponentBase_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/DialogueComponentBase.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Widget_MetaData[] = {
-		{ "Category", "Dialogues" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/** DialogueWidgetType **/" },
-#endif
-		{ "ModuleRelativePath", "Public/DialogueComponentBase.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "DialogueWidgetType *" },
-#endif
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActiveWidget_MetaData[] = {
 		{ "Category", "Dialogues" },
 #if !UE_BUILD_SHIPPING
@@ -1355,7 +1466,6 @@ struct Z_Construct_UClass_UDialogueComponentBase_Statics
 	static void NewProp_bUseAudio_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bUseAudio;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AudioComponent;
-	static const UECodeGen_Private::FClassPropertyParams NewProp_Widget;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActiveWidget;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ActiveProgress_ValueProp;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ActiveProgress_Key_KeyProp;
@@ -1381,6 +1491,7 @@ struct Z_Construct_UClass_UDialogueComponentBase_Statics
 		{ .NameUTF8 = UTF8TEXT("Dialogue"), .Pointer = &UDialogueComponentBase::execDialogue },
 		{ .NameUTF8 = UTF8TEXT("OnAudioLoaded"), .Pointer = &UDialogueComponentBase::execOnAudioLoaded },
 		{ .NameUTF8 = UTF8TEXT("OpenConversation"), .Pointer = &UDialogueComponentBase::execOpenConversation },
+		{ .NameUTF8 = UTF8TEXT("OpenConversationOnBranch"), .Pointer = &UDialogueComponentBase::execOpenConversationOnBranch },
 		{ .NameUTF8 = UTF8TEXT("ProgressDialogue"), .Pointer = &UDialogueComponentBase::execProgressDialogue },
 		{ .NameUTF8 = UTF8TEXT("RemoveDialogueProgress"), .Pointer = &UDialogueComponentBase::execRemoveDialogueProgress },
 		{ .NameUTF8 = UTF8TEXT("SetDialogueBranch"), .Pointer = &UDialogueComponentBase::execSetDialogueBranch },
@@ -1391,19 +1502,20 @@ struct Z_Construct_UClass_UDialogueComponentBase_Statics
 		{ &Z_Construct_UFunction_UDialogueComponentBase_AddDialogue, "AddDialogue" }, // 3439063855
 		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentClearDialogueProgress, "CallParentClearDialogueProgress" }, // 1318754826
 		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentCloseConversation, "CallParentCloseConversation" }, // 782420925
-		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation, "CallParentOpenConversation" }, // 2703643095
+		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentOpenConversation, "CallParentOpenConversation" }, // 3966810336
 		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentProgressDialogue, "CallParentProgressDialogue" }, // 876604463
-		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentRemoveDialogueProgress, "CallParentRemoveDialogueProgress" }, // 3238379930
-		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch, "CallParentSetDialogueBranch" }, // 1846338941
+		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentRemoveDialogueProgress, "CallParentRemoveDialogueProgress" }, // 1759484528
+		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentSetDialogueBranch, "CallParentSetDialogueBranch" }, // 1288920052
 		{ &Z_Construct_UFunction_UDialogueComponentBase_CallParentUpdateSelectedOption, "CallParentUpdateSelectedOption" }, // 1623701919
 		{ &Z_Construct_UFunction_UDialogueComponentBase_ClearDialogueProgress, "ClearDialogueProgress" }, // 3908462414
 		{ &Z_Construct_UFunction_UDialogueComponentBase_CloseConversation, "CloseConversation" }, // 2111246397
 		{ &Z_Construct_UFunction_UDialogueComponentBase_Dialogue, "Dialogue" }, // 3282427296
-		{ &Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded, "OnAudioLoaded" }, // 2078857303
-		{ &Z_Construct_UFunction_UDialogueComponentBase_OpenConversation, "OpenConversation" }, // 1193052824
+		{ &Z_Construct_UFunction_UDialogueComponentBase_OnAudioLoaded, "OnAudioLoaded" }, // 3166631198
+		{ &Z_Construct_UFunction_UDialogueComponentBase_OpenConversation, "OpenConversation" }, // 2283761252
+		{ &Z_Construct_UFunction_UDialogueComponentBase_OpenConversationOnBranch, "OpenConversationOnBranch" }, // 3937760340
 		{ &Z_Construct_UFunction_UDialogueComponentBase_ProgressDialogue, "ProgressDialogue" }, // 3422369463
-		{ &Z_Construct_UFunction_UDialogueComponentBase_RemoveDialogueProgress, "RemoveDialogueProgress" }, // 249290296
-		{ &Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch, "SetDialogueBranch" }, // 252531969
+		{ &Z_Construct_UFunction_UDialogueComponentBase_RemoveDialogueProgress, "RemoveDialogueProgress" }, // 3343780109
+		{ &Z_Construct_UFunction_UDialogueComponentBase_SetDialogueBranch, "SetDialogueBranch" }, // 2549435011
 		{ &Z_Construct_UFunction_UDialogueComponentBase_UpdateSelectedOption, "UpdateSelectedOption" }, // 1052280505
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -1420,20 +1532,18 @@ void Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_bUseAudio_SetBit
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_bUseAudio = { "bUseAudio", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UDialogueComponentBase), &Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_bUseAudio_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bUseAudio_MetaData), NewProp_bUseAudio_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x00200800000a000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AudioComponent_MetaData), NewProp_AudioComponent_MetaData) };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_Widget = { "Widget", nullptr, (EPropertyFlags)0x0024080000000005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, Widget), Z_Construct_UClass_UClass_NoRegister, Z_Construct_UClass_UDialogueWidgetBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Widget_MetaData), NewProp_Widget_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveWidget = { "ActiveWidget", nullptr, (EPropertyFlags)0x002008000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, ActiveWidget), Z_Construct_UClass_UDialogueWidgetBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActiveWidget_MetaData), NewProp_ActiveWidget_MetaData) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveProgress_ValueProp = { "ActiveProgress", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveProgress_Key_KeyProp = { "ActiveProgress_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveProgress = { "ActiveProgress", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, ActiveProgress), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActiveProgress_MetaData), NewProp_ActiveProgress_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveWidget = { "ActiveWidget", nullptr, (EPropertyFlags)0x002008000008001c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, ActiveWidget), Z_Construct_UClass_UDialogueWidgetBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActiveWidget_MetaData), NewProp_ActiveWidget_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveProgress_ValueProp = { "ActiveProgress", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveProgress_Key_KeyProp = { "ActiveProgress_Key", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveProgress = { "ActiveProgress", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, ActiveProgress), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActiveProgress_MetaData), NewProp_ActiveProgress_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveIndex = { "ActiveIndex", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, ActiveIndex), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActiveIndex_MetaData), NewProp_ActiveIndex_MetaData) };
-const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveBranch = { "ActiveBranch", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, ActiveBranch), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActiveBranch_MetaData), NewProp_ActiveBranch_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveBranch = { "ActiveBranch", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, ActiveBranch), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActiveBranch_MetaData), NewProp_ActiveBranch_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_BranchProgress_ValueProp = { "BranchProgress", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FDialogueProgress, METADATA_PARAMS(0, nullptr) }; // 2874820052
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_BranchProgress_Key_KeyProp = { "BranchProgress_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_BranchProgress = { "BranchProgress", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDialogueComponentBase, BranchProgress), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BranchProgress_MetaData), NewProp_BranchProgress_MetaData) }; // 2874820052
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDialogueComponentBase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_bUseAudio,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_AudioComponent,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_Widget,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveWidget,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveProgress_ValueProp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDialogueComponentBase_Statics::NewProp_ActiveProgress_Key_KeyProp,
@@ -1484,7 +1594,7 @@ UDialogueComponentBase::~UDialogueComponentBase() {}
 // ********** End Class UDialogueComponentBase *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics
+struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EProgressStoreType_StaticEnum, TEXT("EProgressStoreType"), &Z_Registration_Info_UEnum_EProgressStoreType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 928982178U) },
@@ -1494,14 +1604,14 @@ struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_Too
 		{ FDialogueProgress::StaticStruct, Z_Construct_UScriptStruct_FDialogueProgress_Statics::NewStructOps, TEXT("DialogueProgress"),&Z_Registration_Info_UScriptStruct_FDialogueProgress, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDialogueProgress), 2874820052U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueComponentBase, UDialogueComponentBase::StaticClass, TEXT("UDialogueComponentBase"), &Z_Registration_Info_UClass_UDialogueComponentBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueComponentBase), 2084593713U) },
+		{ Z_Construct_UClass_UDialogueComponentBase, UDialogueComponentBase::StaticClass, TEXT("UDialogueComponentBase"), &Z_Registration_Info_UClass_UDialogueComponentBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueComponentBase), 1103473590U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_829530060{
+}; // Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_756890539{
 	TEXT("/Script/ToolkitNarratives"),
-	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::EnumInfo),
+	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h__Script_ToolkitNarratives_Statics::EnumInfo),
 };
 // ********** End Registration *********************************************************************
 

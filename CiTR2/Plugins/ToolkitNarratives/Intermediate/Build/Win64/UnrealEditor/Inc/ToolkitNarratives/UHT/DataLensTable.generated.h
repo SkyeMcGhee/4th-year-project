@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UDataLensTable_Statics;
 TOOLKITNARRATIVES_API UClass* Z_Construct_UClass_UDataLensTable_NoRegister();
 
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_INCLASS_NO_PURE_DECLS \
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDataLensTable(); \
 	friend struct ::Z_Construct_UClass_UDataLensTable_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(UDataLensTable)
 
 
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_ENHANCED_CONSTRUCTORS \
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UDataLensTable(UDataLensTable&&) = delete; \
 	UDataLensTable(const UDataLensTable&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~UDataLensTable();
 
 
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_17_PROLOG
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_GENERATED_BODY \
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_17_PROLOG
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_INCLASS_NO_PURE_DECLS \
-	FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_ENHANCED_CONSTRUCTORS \
+	FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_INCLASS_NO_PURE_DECLS \
+	FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,6 +56,6 @@ class UDataLensTable;
 // ********** End Class UDataLensTable *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h
+#define CURRENT_FILE_ID FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

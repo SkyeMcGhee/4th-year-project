@@ -212,15 +212,15 @@ UDataLensTable::~UDataLensTable() {}
 // ********** End Class UDataLensTable *************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_Statics
+struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UDataLensTable, UDataLensTable::StaticClass, TEXT("UDataLensTable"), &Z_Registration_Info_UClass_UDataLensTable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDataLensTable), 3391736763U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_1887445457{
+}; // Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_1887445457{
 	TEXT("/Script/ToolkitNarratives"),
-	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensTable_h__Script_ToolkitNarratives_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

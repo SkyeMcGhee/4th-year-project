@@ -1278,7 +1278,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FDataLensRecordUpdatePayload()
 // ********** End ScriptStruct FDataLensRecordUpdatePayload ****************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_Statics
+struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FRecordAddress::StaticStruct, Z_Construct_UScriptStruct_FRecordAddress_Statics::NewStructOps, TEXT("RecordAddress"),&Z_Registration_Info_UScriptStruct_FRecordAddress, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRecordAddress), 3084208652U) },
@@ -1295,11 +1295,11 @@ struct Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_Too
 		{ FDataLensDatabaseSaveData::StaticStruct, Z_Construct_UScriptStruct_FDataLensDatabaseSaveData_Statics::NewStructOps, TEXT("DataLensDatabaseSaveData"),&Z_Registration_Info_UScriptStruct_FDataLensDatabaseSaveData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDataLensDatabaseSaveData), 461894922U) },
 		{ FDataLensRecordUpdatePayload::StaticStruct, Z_Construct_UScriptStruct_FDataLensRecordUpdatePayload_Statics::NewStructOps, TEXT("DataLensRecordUpdatePayload"),&Z_Registration_Info_UScriptStruct_FDataLensRecordUpdatePayload, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FDataLensRecordUpdatePayload), 554884207U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_243028219{
+}; // Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_243028219{
 	TEXT("/Script/ToolkitNarratives"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DataLensStructs_h__Script_ToolkitNarratives_Statics::ScriptStructInfo),
 	nullptr, 0,
 };
 // ********** End Registration *********************************************************************

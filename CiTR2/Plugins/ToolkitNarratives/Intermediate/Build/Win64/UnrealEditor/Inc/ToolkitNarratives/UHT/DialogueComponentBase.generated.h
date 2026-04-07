@@ -15,14 +15,14 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UCommonActivatableWidgetContainerBase;
+class UDialogueWidgetBase;
 class USoundBase;
 enum class EDialogueAddType : uint8;
 enum class EProgressStoreType : uint8;
 
 // ********** Begin ScriptStruct FDialogueProgress *************************************************
 struct Z_Construct_UScriptStruct_FDialogueProgress_Statics;
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_32_GENERATED_BODY \
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_32_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FDialogueProgress_Statics; \
 	TOOLKITNARRATIVES_API static class UScriptStruct* StaticStruct();
 
@@ -31,7 +31,7 @@ struct FDialogueProgress;
 // ********** End ScriptStruct FDialogueProgress ***************************************************
 
 // ********** Begin Class UDialogueComponentBase ***************************************************
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnAudioLoaded); \
 	DECLARE_FUNCTION(execCallParentSetDialogueBranch); \
 	DECLARE_FUNCTION(execSetDialogueBranch); \
@@ -47,15 +47,16 @@ struct FDialogueProgress;
 	DECLARE_FUNCTION(execProgressDialogue); \
 	DECLARE_FUNCTION(execCallParentCloseConversation); \
 	DECLARE_FUNCTION(execCloseConversation); \
+	DECLARE_FUNCTION(execOpenConversationOnBranch); \
 	DECLARE_FUNCTION(execCallParentOpenConversation); \
 	DECLARE_FUNCTION(execOpenConversation);
 
 
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_CALLBACK_WRAPPERS
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_CALLBACK_WRAPPERS
 struct Z_Construct_UClass_UDialogueComponentBase_Statics;
 TOOLKITNARRATIVES_API UClass* Z_Construct_UClass_UDialogueComponentBase_NoRegister();
 
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_INCLASS_NO_PURE_DECLS \
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDialogueComponentBase(); \
 	friend struct ::Z_Construct_UClass_UDialogueComponentBase_Statics; \
@@ -66,7 +67,7 @@ public: \
 	DECLARE_SERIALIZER(UDialogueComponentBase)
 
 
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_ENHANCED_CONSTRUCTORS \
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UDialogueComponentBase(UDialogueComponentBase&&) = delete; \
 	UDialogueComponentBase(const UDialogueComponentBase&) = delete; \
@@ -76,14 +77,14 @@ public: \
 	NO_API virtual ~UDialogueComponentBase();
 
 
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_40_PROLOG
-#define FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_GENERATED_BODY \
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_40_PROLOG
+#define FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_CALLBACK_WRAPPERS \
-	FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_INCLASS_NO_PURE_DECLS \
-	FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_ENHANCED_CONSTRUCTORS \
+	FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_CALLBACK_WRAPPERS \
+	FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_INCLASS_NO_PURE_DECLS \
+	FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h_43_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -93,7 +94,7 @@ class UDialogueComponentBase;
 // ********** End Class UDialogueComponentBase *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_mayas_Desktop_4thYrProj_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h
+#define CURRENT_FILE_ID FID_Users_mayas_Desktop_4thYrProj_4th_year_project_CiTR2_Plugins_ToolkitNarratives_Source_ToolkitNarratives_Public_DialogueComponentBase_h
 
 // ********** Begin Enum EProgressStoreType ********************************************************
 #define FOREACH_ENUM_EPROGRESSSTORETYPE(op) \

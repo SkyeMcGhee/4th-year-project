@@ -1,5 +1,2 @@
-2026/03/20-11:48:05.325 1ba8 Reusing MANIFEST C:\Users\mayas\Desktop\4thYrProj\4th-year-project\CiTR2\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
-2026/03/20-11:48:05.341 1ba8 Recovering log #6
-2026/03/20-11:48:05.341 1ba8 Level-0 table #9: started
-2026/03/20-11:48:05.359 1ba8 Level-0 table #9: 75718 bytes OK
-2026/03/20-11:48:05.377 1ba8 Delete type=0 #6
+2026/04/07-13:57:11.729 81c8 Creating DB C:\Users\mayas\Desktop\4thYrProj\4th-year-project\CiTR2\Saved\webcache_6613\Default\Local Storage\leveldb since it was missing.
+2026/04/07-13:57:11.747 81c8 Reusing MANIFEST C:\Users\mayas\Desktop\4thYrProj\4th-year-project\CiTR2\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001

@@ -20,9 +20,9 @@
 /ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/lib/x64"
-/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.26100.0/ucrt/x64"
-/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.26100.0/um/x64"
+/LIBPATH:"C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.44.35207/lib/x64"
+/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.22621.0/ucrt/x64"
+/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.22621.0/um/x64"
 /NODEFAULTLIB:"LIBCMT"
 /NODEFAULTLIB:"LIBCPMT"
 /NODEFAULTLIB:"LIBCMTD"
@@ -36,16 +36,9 @@
 /FUNCTIONPADMIN:6
 /NOIMPLIB
 /NOEXP
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/Module.ToolkitNarratives.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/DataLensStructs.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/DataLensSubsystem.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/DataLensTable.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/DataLensTableView.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/DialogueComponentBase.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/DialogueWidgetBase.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/ToolkitNarratives.cpp.obj"
-"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/Default.rc2.res"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Intermediate/Build/Win64/x64/CiTR2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.obj"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/Module.ToolkitNarratives.cpp.obj"
+"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Intermediate/Build/Win64/x64/UnrealEditor/Development/ToolkitNarratives/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Engine/UnrealEditor-Engine.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Slate/UnrealEditor-Slate.lib"
@@ -79,6 +72,6 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Binaries/Win64/UnrealEditor-ToolkitNarratives.dll"
-/PDB:"C:/Users/mayas/Desktop/4thYrProj/CiTR2/Plugins/ToolkitNarratives/Binaries/Win64/UnrealEditor-ToolkitNarratives.pdb"
+/OUT:"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Binaries/Win64/UnrealEditor-ToolkitNarratives.dll"
+/PDB:"C:/Users/mayas/Desktop/4thYrProj/4th-year-project/CiTR2/Plugins/ToolkitNarratives/Binaries/Win64/UnrealEditor-ToolkitNarratives.pdb"
 /ignore:4078

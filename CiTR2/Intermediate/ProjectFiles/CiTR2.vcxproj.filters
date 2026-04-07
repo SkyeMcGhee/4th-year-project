@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <None Include="..\..\.vsconfig" />
     <None Include="..\..\CiTR2.uproject" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -19,6 +20,102 @@
     </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\ToolkitNarratives">
+      <UniqueIdentifier>{8C88AC1D-D441-323A-8885-7E1008E1F92F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\ToolkitNarratives\Resources">
+      <UniqueIdentifier>{B5A3A5F0-0183-3B96-A789-AC315CEDF064}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\ToolkitNarratives\Resources\Icon128.png">
+      <Filter>Plugins\ToolkitNarratives\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\ToolkitNarratives\Source">
+      <UniqueIdentifier>{45423734-DEDC-325C-85CA-E363C0EE07A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor">
+      <UniqueIdentifier>{2B884C32-438D-3D7B-9F4E-ABB4269614AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Private">
+      <UniqueIdentifier>{B7544B47-8BA6-3088-82AF-2FA9352347E8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Private\ToolkitNarrativesEditor.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Private\UK2Node_GetViewData.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Public">
+      <UniqueIdentifier>{D4CECEFF-D906-3C0C-A2DF-E7F37B3BEDB2}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Public\ToolkitNarrativesEditor.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Public\UK2Node_GetViewData.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor\ToolkitNarrativesEditor.Build.cs">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarrativesEditor</Filter>
+    </None>
+    <Filter Include="Plugins\ToolkitNarratives\Source\ToolkitNarratives">
+      <UniqueIdentifier>{7FD724D3-7360-3090-B190-401B8E0EE30E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private">
+      <UniqueIdentifier>{CD113256-8957-34BD-A4E4-CBDEB7E839BE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private\DataLensStructs.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private\DataLensSubsystem.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private\DataLensTable.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private\DataLensTableView.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private\DialogueComponentBase.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private\DialogueWidgetBase.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private\ToolkitNarratives.cpp">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public">
+      <UniqueIdentifier>{ADF66F6C-D40B-3895-91A0-34AD4D155E11}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public\DataLensStructs.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public\DataLensSubsystem.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public\DataLensTable.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public\DataLensTableView.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public\DialogueComponentBase.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public\DialogueWidgetBase.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public\ToolkitNarratives.h">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\ToolkitNarratives\Source\ToolkitNarratives\ToolkitNarratives.Build.cs">
+      <Filter>Plugins\ToolkitNarratives\Source\ToolkitNarratives</Filter>
+    </None>
+    <None Include="..\..\Plugins\ToolkitNarratives\ToolkitNarratives.uplugin">
+      <Filter>Plugins\ToolkitNarratives</Filter>
     </None>
     <Filter Include="Source">
       <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
